@@ -1,4 +1,8 @@
 # Guide-For-Scraping-Data-through-Python-Block-some-Special-Token-On-Dynamic-JavaScript-Website-Platform
+
+Project：Scraping College/High School_Superintendents Contact Informations around USA
+(Take Michigan’s schools for example)
+
 Target : https://www.mischooldata.org/Legislative/LegislativeDashboard3.aspx
 網站解析：
 1. ASP.net 撰寫
