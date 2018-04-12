@@ -9,6 +9,7 @@ Target : https://www.mischooldata.org/Legislative/LegislativeDashboard3.aspx
 2. Table內每一個連結都採用 POST BACK
 3. 有時候可能會有 unexcepted error 或 session timeout
 4. ping 不到其伺服器，但是從 chrome develope Tool 判斷：根據我的網路狀況，平均一個頁面 Loading 要 10-15 秒
+=================================================================================================
 
 目標：
 抓取 https://www.mischooldata.org/Legislative/LegislativeDashboard3.aspx
@@ -16,6 +17,7 @@ Target : https://www.mischooldata.org/Legislative/LegislativeDashboard3.aspx
 2. 進到各個 Col:School District Name 進行遍歷
 3. 取出 #_LocationHeader、#_Superintendent、#_Mail、#_Phone、#_Email、#_Website
 4. 綜合以上內容，建構一 csv
+==================================================================================================
 
 思路：
 因為有兩個地方要抓，所以分成兩個階段進行
@@ -32,11 +34,12 @@ b. 模擬 Submit Form (FormData 複雜，而且不知道是否有防 Cross-Domai
 
 第三階段：
 讀取 Stage1 和 Stage2 兩個檔案，進行合併，獲得 result.csv
+==================================================================================================
 
 → Python result for CSV file
 
 因為動態網站裡有很多屏蔽你抓取資料的 token，以上提供了一些在動態網站上如何抓取資料而不容易 GG （有很多亂碼或 Bug 在裡面）的小方法，但是這個方法有點土法煉鋼（如果資料量過大的話 Server 就會有點 G，但這已經算是最好理解以及最簡易的方式。
-
+==================================================================================================
 Output stage 1.
 
 先匯出所有的 #_LocationHeader #_Schools Name 
