@@ -19,14 +19,17 @@ Target : https://www.mischooldata.org/Legislative/LegislativeDashboard3.aspx
 
 思路：
 因為有兩個地方要抓，所以分成兩個階段進行
+
 第一階段：先抓 #SchoolDistrictBrowser_RadGrid_GridHeader 中的 Table
 (file : output_Stage1.txt)
+
 第二階段：根據第一階段的結果( 850 筆)資料，分成 850 次進到該頁面取出目標資訊
 進到內頁面有兩種方式：
 a. 模擬點擊(利用類似按鍵精靈的方式，用 winForm 對著網頁進行點擊)
 b. 模擬 Submit Form (FormData 複雜，而且不知道是否有防 Cross-Domain，所以這當做最終方案)
 進入到內頁面後，搜尋 #_LocationHeader、#_Superintendent、#_Mail、#_Phone、#_Email、#_Website，並取出其資料
 (file : output_Stage2.txt)
+
 第三階段：
 讀取 Stage1 和 Stage2 兩個檔案，進行合併，獲得 result.csv
 
