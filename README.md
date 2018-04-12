@@ -28,7 +28,7 @@ b. 模擬 Submit Form (FormData 複雜，而且不知道是否有防 Cross-Domai
 
 → Python result for CSV file
 
-因為動態網站裡有很多屏蔽你抓取資料的 token，以上提供了一些在動態網站上如何抓取資料而不容易 GG （有很多亂碼或 Bug 在裡面）的小方法
+因為動態網站裡有很多屏蔽你抓取資料的 token，以上提供了一些在動態網站上如何抓取資料而不容易 GG （有很多亂碼或 Bug 在裡面）的小方法，但是這個方法有點土法煉鋼（如果資料量過大的話 Server 就會有點 G，但這已經算是最好理解以及最簡易的方式。
 
 Output stage 1.
 
