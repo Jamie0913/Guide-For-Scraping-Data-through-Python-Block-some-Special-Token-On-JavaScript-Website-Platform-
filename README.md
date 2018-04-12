@@ -34,6 +34,7 @@ b. 模擬 Submit Form (FormData 複雜，而且不知道是否有防 Cross-Domai
 
 第三階段：
 讀取 Stage1 和 Stage2 兩個檔案，進行合併，獲得 result.csv
+
 ==================================================================================================
 
 → Python result for CSV file
